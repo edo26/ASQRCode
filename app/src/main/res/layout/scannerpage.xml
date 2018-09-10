@@ -1,0 +1,48 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+        android:id="@+id/qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+   <android.support.v4.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.3"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           >
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textSize="20sp"
+               android:text="Lihat hasilnya :"
+               android:layout_margin="5dp"
+               android:gravity="start"
+               android:textColor="@android:color/black"
+               />
+
+           <TextView
+               android:id="@+id/hasilnya"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textSize="20sp"
+               android:gravity="start"
+               android:textColor="@android:color/black"
+               android:text=""
+               />
+
+       </LinearLayout>
+   </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ubah kalimat/kata/string menjadi gambar QRCODE"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/textArea_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="top|start"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:lines="6"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:scrollHorizontally="false"
+        android:hint="Masukkan teks disini....."
+        />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btn_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GENERATE"
+        app:bootstrapBrand="danger"
+        app:roundedCorners="true"
+        android:layout_margin="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/defaultqrcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/defaultqrcode"
+        />
+
+</LinearLayout>
